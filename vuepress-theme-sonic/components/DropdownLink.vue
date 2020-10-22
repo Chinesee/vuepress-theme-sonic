@@ -10,10 +10,8 @@
       @click="handleDropdown"
     >
       <span class="title">{{ item.text }}</span>
-      <!-- <span class="arrow down" /> -->
       <i class="bx bx-chevron-down not-remove"></i>
     </a>
-    <!-- <NavLink :item="item" /> -->
     <a
       class="mobile-dropdown-title"
       @click="setOpen(!open)"
