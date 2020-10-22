@@ -10,7 +10,7 @@
       @click="handleDropdown"
     >
       <span class="title">{{ item.text }}</span>
-      <i class="bx bx-chevron-down not-remove"></i>
+      <i class="bx bx-chevron-down"></i>
     </a>
     <a
       class="mobile-dropdown-title"
