@@ -4,12 +4,16 @@
     :class="{ open }"
   >
     <a
-      class="dropdown-title"
+      class="dropdown-title nav-link"
+      :class="{ 'router-link-active' : isActive }"
+      :href="item.link"
       @click="handleDropdown"
     >
       <span class="title">{{ item.text }}</span>
       <!-- <span class="arrow down" /> -->
+      <i class="bx bx-chevron-down not-remove"></i>
     </a>
+    <!-- <NavLink :item="item" /> -->
     <a
       class="mobile-dropdown-title"
       @click="setOpen(!open)"
@@ -92,6 +96,10 @@ export default {
   },
 
   computed: {
+    isActive() {
+      return this.$route.path.indexOf(this.item.link) !== -1
+    },
+
     dropdownAriaLabel() {
       return this.item.ariaLabel || this.item.text
     },

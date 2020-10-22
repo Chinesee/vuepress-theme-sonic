@@ -40,10 +40,7 @@ import NavLink from '@theme/components/NavLink.vue'
 export default {
   name: 'NavLinks',
 
-  components: {
-    NavLink,
-    DropdownLink,
-  },
+  components: { NavLink, DropdownLink },
 
   computed: {
     userNav() {
