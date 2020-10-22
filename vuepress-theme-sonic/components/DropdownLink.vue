@@ -95,7 +95,9 @@ export default {
 
   computed: {
     isActive() {
-      return this.$route.path.indexOf(this.item.link) !== -1
+      const basePath = this.$route.path.split('/')[1]
+      const linkBasePath = this.item.link.split('/')[1]
+      return basePath === linkBasePath
     },
 
     dropdownAriaLabel() {
