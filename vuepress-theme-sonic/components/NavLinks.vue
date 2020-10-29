@@ -127,7 +127,7 @@ export default {
 
   a
     color inherit
-    transition all 0.3s
+    transition all 0.25s
 
     &:hover, &.router-link-active
       color $accentColor

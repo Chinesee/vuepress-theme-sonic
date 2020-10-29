@@ -115,8 +115,9 @@ function css(el, property) {
   .home-link
     position absolute
     left 0px
+    margin-right 40px
+    padding-left 10px
     font-weight bold
-    padding-left 30px
 
   .site-name
     font-size 1.3rem
