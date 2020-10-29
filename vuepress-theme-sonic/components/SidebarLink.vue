@@ -109,9 +109,9 @@ function renderExternal(h, to, text) {
 a.sidebar-link
   position relative
   width 100%
-  line-height 1.4
   padding 0.35rem 1rem 0.35rem 1.25rem
   display inline-block
+  line-height 1.4
   color #bbc1c7
   font-size 1em
   font-weight 400
@@ -123,12 +123,13 @@ a.sidebar-link
     position absolute
     top 50%
     left 0
-    transform translateY(-50%)
     width 5px
     height 0
+    transform translateY(-50%)
     transition all 0.2s
     border-radius 0 5px 5px 0
     background $textColor
+    opacity 0
 
   &:hover
     color $textColor
@@ -139,6 +140,7 @@ a.sidebar-link
 
     &::before
       height 30px
+      opacity 1
 
   .sidebar-group &
     padding-left 2rem
@@ -146,8 +148,25 @@ a.sidebar-link
   .sidebar-sub-headers &
     padding-top 0.25rem
     padding-bottom 0.25rem
-    border-left none
+
+    &::before
+      content ''
+      position absolute
+      top 50%
+      left 10px
+      width 10px
+      height 3px
+      transform translateY(-50%)
+      transform scaleX(0)
+      transition all 0.2s
+      border-radius 2px
+      background $textColor
+      opacity 0
 
     &.active
       font-weight 500
+
+      &::before
+        transform scaleX(1)
+        opacity 1
 </style>

@@ -16,10 +16,6 @@ export default {
   name: 'SideNav',
 
   props: ['items', 'fixed'],
-
-  mounted() {
-    console.log(this.$page.headers)
-  },
 }
 </script>
 

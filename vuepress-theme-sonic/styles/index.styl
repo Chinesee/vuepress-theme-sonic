@@ -137,7 +137,6 @@ h1
 h2
   font-size 1.65rem
   padding-bottom 0.3rem
-  border-bottom 1px solid $borderColor
 
 h3
   font-size 1.35rem
@@ -149,9 +148,10 @@ a.header-anchor
   padding-right 0.23em
   margin-top 0.125em
   opacity 0
+  transition opacity 0.2s
 
   &:hover
-    text-decoration none
+    text-decoration none !important
 
 code, kbd, .line-number
   font-family source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace
