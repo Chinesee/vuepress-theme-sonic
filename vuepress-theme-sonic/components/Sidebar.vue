@@ -50,7 +50,7 @@ export default {
       padding 0.5rem 0 0.5rem 1.5rem
 
   & > .sidebar-links
-    padding 1.5rem 0
+    padding 3rem 0
 
     & > li > a.sidebar-link
       font-size 1.1em

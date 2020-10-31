@@ -158,7 +158,7 @@ function flatten(items, res) {
     margin-top 0
     padding-top 1rem
     display flex
-    justify-content space-between
+    align-items center
     border-top 1px solid $borderColor
 
     .arrow-icon
@@ -168,4 +168,10 @@ function flatten(items, res) {
   .prev, .next
     display flex
     align-items center
+
+  .prev
+    margin-right auto
+
+  .next
+    margin-left auto
 </style>
