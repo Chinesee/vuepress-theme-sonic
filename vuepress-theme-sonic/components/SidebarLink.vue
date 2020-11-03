@@ -124,9 +124,9 @@ a.sidebar-link
     top 50%
     left 0
     width 5px
-    height 0
-    transform translateY(-50%)
-    transition all 0.2s
+    height 30px
+    transform translate(-100%, -50%)
+    transition all 0.5s
     border-radius 0 5px 5px 0
     background $textColor
     opacity 0
@@ -139,7 +139,8 @@ a.sidebar-link
     color $textColor
 
     &::before
-      height 30px
+      // height 30px
+      transform translate(0%, -50%)
       opacity 1
 
   .sidebar-group &
@@ -154,11 +155,10 @@ a.sidebar-link
       position absolute
       top 50%
       left 10px
-      width 10px
+      width 0
       height 3px
       transform translateY(-50%)
-      transform scaleX(0)
-      transition all 0.2s
+      transition all 0.5s
       border-radius 2px
       background $textColor
       opacity 0
@@ -167,6 +167,6 @@ a.sidebar-link
       font-weight 500
 
       &::before
-        transform scaleX(1)
+        width 10px
         opacity 1
 </style>
