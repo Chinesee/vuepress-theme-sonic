@@ -97,13 +97,13 @@ export default {
 
 <style lang="stylus">
 .home
-  padding $navbarHeight 2rem 0
   max-width $homePageWidth
   margin 0px auto
+  padding $navbarHeight 2rem 0
   display block
 
   .hero
-    padding 3rem 0
+    padding 5rem 0
     display flex
     align-items center
 
@@ -183,6 +183,17 @@ export default {
 
 @media (max-width $MQMobile)
   .home
+    .hero
+      text-align center
+
+      .description
+        margin-left auto
+        margin-right auto
+        font-size 1rem
+
+    .banner
+      display none
+
     .features
       flex-direction column
 
@@ -207,7 +218,7 @@ export default {
         margin 1.2rem auto
 
       .description
-        font-size 1.2rem
+        font-size 1rem
 
       .action-button
         font-size 1rem
