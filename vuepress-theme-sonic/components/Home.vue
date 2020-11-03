@@ -4,7 +4,7 @@
     :aria-labelledby="data.heroText !== null ? 'main-title' : null"
   >
     <div class="hero">
-      <div>
+      <div class="hero-left">
         <h1
           v-if="data.heroText !== null"
           class="main-title"
@@ -144,11 +144,13 @@ export default {
           background-color lighten(#ffda5b, 30%)
 
   .banner
-    margin-left 2.5rem
+    margin-left 3rem
     flex 1
 
     &-img
       width 100%
+      border-radius 1rem
+      box-shadow 0 5px 20px rgba(0, 0, 0, 0.08)
 
   .features
     border-top 1px solid $borderColor
@@ -186,6 +188,12 @@ export default {
     .hero
       text-align center
 
+      .hero-left
+        width 100%
+        display flex
+        flex-direction column
+        justify-content center
+
       .description
         margin-left auto
         margin-right auto
@@ -214,7 +222,9 @@ export default {
       h1
         font-size 2rem
 
-      h1, .description, .action
+      h1,
+      .description,
+      .action
         margin 1.2rem auto
 
       .description
