@@ -17,10 +17,10 @@
       @click="setOpen(!open)"
     >
       <span class="title">{{ item.text }}</span>
-      <span
-        class="arrow"
+      <i
+        class="bx bx-chevron-right"
         :class="open ? 'down' : 'right'"
-      />
+      ></i>
     </a>
 
     <DropdownTransition>
@@ -153,6 +153,14 @@ export default {
       &:hover
         color $accentColor
 
+    .bx-chevron-right
+      position relative
+      top 2px
+      transition all 0.2s
+
+      &.down
+        transform rotateZ(90deg)
+
   .nav-dropdown
     .dropdown-item
       color inherit
@@ -221,7 +229,8 @@ export default {
           margin-top 0
           padding-top 0
 
-        h4, & > a
+        h4,
+        & > a
           font-size 15px
           line-height 2rem
 
@@ -233,7 +242,8 @@ export default {
   .dropdown-wrapper
     height 1.8rem
 
-    &:hover .nav-dropdown, &.open .nav-dropdown
+    &:hover .nav-dropdown,
+    &.open .nav-dropdown
       // override the inline style.
       // display block !important
       transform translate(0, calc(100% + 10px)) !important
