@@ -102,8 +102,11 @@ function css(el, property) {
   align-items center
   justify-content center
   line-height $navbarHeight - 1.4rem
+  background-color #fff
 
-  a, span, img
+  a,
+  span,
+  img
     display inline-block
 
   .logo

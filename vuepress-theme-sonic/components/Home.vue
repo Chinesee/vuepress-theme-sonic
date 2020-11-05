@@ -126,7 +126,7 @@ export default {
         margin 1.5rem 0
         font-size 1.1rem
         line-height 1.8
-        color #a0a5b9
+        color $textGrayColor
         box-sizing border-box
 
       .action-button

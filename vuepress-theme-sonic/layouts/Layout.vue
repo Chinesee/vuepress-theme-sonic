@@ -27,12 +27,7 @@
       </template>
     </Sidebar>
 
-    <Home v-if="$page.frontmatter.home" />
-
-    <Page
-      v-else
-      :sidebar-items="sidebarItems"
-    >
+    <Page :sidebar-items="sidebarItems">
       <template #top>
         <slot name="page-top" />
       </template>
@@ -44,7 +39,6 @@
 </template>
 
 <script>
-import Home from '@theme/components/Home.vue'
 import Navbar from '@theme/components/Navbar.vue'
 import Page from '@theme/components/Page.vue'
 import Sidebar from '@theme/components/Sidebar.vue'
@@ -54,7 +48,6 @@ export default {
   name: 'Layout',
 
   components: {
-    Home,
     Page,
     Sidebar,
     Navbar,
