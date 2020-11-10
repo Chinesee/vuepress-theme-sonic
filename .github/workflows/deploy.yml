@@ -44,4 +44,4 @@ jobs:
         git config --local user.email "czc12580520@gmail.com"
         git add .
         git commit -m "GitHub Actions Auto Builder at $(date +'%Y-%m-%d %H:%M:%S')"
-        git push --force --quiet "https://${{ secrets.ACCESS_TOKEN }}@$GITHUB_REPO" HEAD:gh-pages
+        git push --force --quiet "https://x-access-token:${{ secrets.ACCESS_TOKEN }}@$GITHUB_REPO" HEAD:gh-pages
