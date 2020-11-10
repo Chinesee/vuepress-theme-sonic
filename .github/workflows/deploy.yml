@@ -36,7 +36,7 @@ jobs:
 
     - name: Deploy
       env:
-        GITHUB_REPO: github.com/Chinesee/Chinesee/vuepress-theme-sonic.git
+        GITHUB_REPO: github.com/Chinesee/vuepress-theme-sonic.git
       run: |
         cd ./docs/.vuepress/dist
         git init
